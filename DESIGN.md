@@ -41,4 +41,10 @@ classDiagram
     Vehiculo "1" *-- "*" Reparacion : Composición
     Especialista <|.. Mecanico : Realización
     Taller ..> Mecanico : Dependencia
+    
+    class Factura {
+        -double total
+        -Reparacion reparacion
+    }
+    Factura --> Reparacion : Asociación
 ```
